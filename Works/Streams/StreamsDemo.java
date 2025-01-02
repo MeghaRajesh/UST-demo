@@ -10,11 +10,20 @@ public class StreamsDemo {
         numbers.add(2);
         numbers.add(10);
         numbers.add(15);
+        System.out.println("--------------------------------");
 
+        
         numbers.stream().forEach((eachNum -> System.out.println(eachNum)));
         numbers
             .stream()
             .map((eachNum)->eachNum*2)
+            .forEach((eachNum)->System.out.println(eachNum));
+        System.out.println("--------------------------------");
+
+
+        numbers
+            .stream()
+            .filter((eachNum)->eachNum>10)
             .forEach((eachNum)->System.out.println(eachNum));
     }
     

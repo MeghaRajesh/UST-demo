@@ -13,6 +13,7 @@ public class TreeSetDemo {
 
         allCountries.forEach((country)->System.out.println(country));
         System.out.println("-----------------------");
+        //descending order
         SortedSet<String> allColors=new TreeSet<>((c1,c2)->c2.compareTo(c1));
         allColors.add("Red");
         allColors.add("Blue");
